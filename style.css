@@ -1,0 +1,11 @@
+.err {
+    color: red;
+}
+
+#followers, #followers th, #followers td{
+    border: 1px solid black;
+}
+
+#followers {
+    border-collapse: collapse;
+}
