@@ -106,11 +106,11 @@
 <form action="#" method="post">
         <p>
             Name:
-            <input type="text" name="name" value="<?php if($name != undefined) {echo $name;} ?>"><span class="err"> * <?php echo $nameErr; ?></span>
+            <input type="text" name="name" value="<?php if(isset($name)) echo $name; ?>"><span class="err"> * <?php echo $nameErr; ?></span>
         </p>
         <p>
             Surname:
-            <input type="text" name="surname" value="<?php if($surname) echo $surname; ?>"><span class="err"> * <?php echo $surnameErr; ?></span>
+            <input type="text" name="surname" value="<?php if(isset($surname)) echo $surname; ?>"><span class="err"> * <?php echo $surnameErr; ?></span>
         </p>
         <p>
             Gender:
